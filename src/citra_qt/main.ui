@@ -320,6 +320,106 @@
     <string>Save to Oldest Slot</string>
    </property>
   </action>
+  <action name="action_Save_to_Tenth_Slot">
+    <property name="text">
+     <string>Save to 10th Slot</string>
+   </property>
+  </action>
+  <action name="action_Save_to_First_Slot">
+    <property name="text">
+     <string>Save to 1st Slot</string>
+   </property>
+  </action>
+  <action name="action_Save_to_Second_Slot">
+    <property name="text">
+     <string>Save to 2nd Slot</string>
+   </property>
+  </action>
+  <action name="action_Save_to_Third_Slot">
+   <property name="text">
+    <string>Save to 3rd Slot</string>
+   </property>
+  </action>
+  <action name="action_Save_to_Fourth_Slot">
+   <property name="text">
+    <string>Save to 4th Slot</string>
+   </property>
+  </action>
+  <action name="action_Save_to_Fifth_Slot">
+   <property name="text">
+    <string>Save to 5th Slot</string>
+   </property>
+  </action>
+  <action name="action_Save_to_Sixth_Slot">
+   <property name="text">
+    <string>Save to 6th Slot</string>
+   </property>
+  </action>
+  <action name="action_Save_to_Seventh_Slot">
+   <property name="text">
+    <string>Save to 7th Slot</string>
+   </property>
+  </action>
+  <action name="action_Save_to_Eighth_Slot">
+   <property name="text">
+    <string>Save to 8th Slot</string>
+   </property>
+  </action>
+  <action name="action_Save_to_Ninth_Slot">
+    <property name="text">
+     <string>Save to 9th Slot</string>
+   </property>
+  </action>
+  <action name="action_Load_from_Tenth_Slot">
+   <property name="text">
+    <string>Load from 10th Slot</string>
+   </property>
+  </action>
+  <action name="action_Load_from_First_Slot">
+   <property name="text">
+    <string>Load from 1st Slot</string>
+   </property>
+  </action>
+  <action name="action_Load_from_Second_Slot">
+   <property name="text">
+    <string>Load from 2nd Slot</string>
+   </property>
+  </action>
+  <action name="action_Load_from_Third_Slot">
+   <property name="text">
+    <string>Load from 3rd Slot</string>
+   </property>
+  </action>
+  <action name="action_Load_from_Fourth_Slot">
+   <property name="text">
+    <string>Load from 4th Slot</string>
+   </property>
+  </action>
+  <action name="action_Load_from_Fifth_Slot">
+   <property name="text">
+    <string>Load from 5th Slot</string>
+   </property>
+  </action>
+  <action name="action_Load_from_Sixth_Slot">
+   <property name="text">
+    <string>Load from 6th Slot</string>
+   </property>
+  </action>
+  <action name="action_Load_from_Seventh_Slot">
+   <property name="text">
+    <string>Load from 7th Slot</string>
+   </property>
+  </action>
+  <action name="action_Load_from_Eighth_Slot">
+   <property name="text">
+    <string>Load from 8th Slot</string>
+   </property>
+  </action>
+  <action name="action_Load_from_Ninth_Slot">
+   <property name="text">
+    <string>Load from 9th Slot</string>
+   </property>
+  </action>
   <action name="action_Load_from_Newest_Slot">
    <property name="text">
     <string>Load from Newest Slot</string>
