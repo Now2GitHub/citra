@@ -530,6 +530,47 @@ void GMainWindow::InitializeSaveStateMenuActions() {
         connect(actions_save_state[i], &QAction::triggered, this, &GMainWindow::OnSaveState);
         ui->menu_Save_State->addAction(actions_save_state[i]);
     }
+    connect(ui->action_Load_from_First_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_load_state[0]->trigger();
+    });
+    connect(ui->action_Load_from_Second_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_load_state[1]->trigger();
+    });
+    connect(ui->action_Load_from_Third_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_load_state[2]->trigger();
+    });
+    connect(ui->action_Load_from_Fourth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_load_state[3]->trigger();
+    });
+    connect(ui->action_Load_from_Fifth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_load_state[4]->trigger();
+    });
+    connect(ui->action_Load_from_Sixth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_load_state[5]->trigger();
+    });
+    connect(ui->action_Load_from_Seventh_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_load_state[6]->trigger();
+    });
+    connect(ui->action_Load_from_Eighth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_load_state[7]->trigger();
+    });
+    connect(ui->action_Load_from_Ninth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_load_state[8]->trigger();
+    });
+    connect(ui->action_Load_from_Tenth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+
+        actions_load_state[9]->trigger();
+    });
 
     connect(ui->action_Load_from_Newest_Slot, &QAction::triggered, this, [this] {
         UpdateSaveStates();
@@ -537,6 +578,48 @@ void GMainWindow::InitializeSaveStateMenuActions() {
             actions_load_state[newest_slot - 1]->trigger();
         }
     });
+
+     connect(ui->action_Save_to_First_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_save_state[0]->trigger();
+    });
+    connect(ui->action_Save_to_Second_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_save_state[1]->trigger();
+    });
+    connect(ui->action_Save_to_Third_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_save_state[2]->trigger();
+    });
+    connect(ui->action_Save_to_Fourth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_save_state[3]->trigger();
+    });
+    connect(ui->action_Save_to_Fifth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_save_state[4]->trigger();
+    });
+    connect(ui->action_Save_to_Sixth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_save_state[5]->trigger();
+    });
+    connect(ui->action_Save_to_Seventh_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_save_state[6]->trigger();
+    });
+    connect(ui->action_Save_to_Eighth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_save_state[7]->trigger();
+    });
+    connect(ui->action_Save_to_Ninth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_save_state[8]->trigger();
+    });
+    connect(ui->action_Save_to_Tenth_Slot, &QAction::triggered, this, [this] {
+        UpdateSaveStates();
+        actions_save_state[9]->trigger();
+    });
+
     connect(ui->action_Save_to_Oldest_Slot, &QAction::triggered, this, [this] {
         UpdateSaveStates();
         actions_save_state[oldest_slot - 1]->trigger();
@@ -583,7 +666,27 @@ void GMainWindow::InitializeHotkeys() {
     link_action_shortcut(ui->action_Enable_Frame_Advancing,
                          QStringLiteral("Toggle Frame Advancing"));
     link_action_shortcut(ui->action_Advance_Frame, QStringLiteral("Advance Frame"));
+    link_action_shortcut(ui->action_Load_from_First_Slot, QStringLiteral("Load from 1st Slot"));
+    link_action_shortcut(ui->action_Load_from_Second_Slot, QStringLiteral("Load from 2nd Slot"));
+    link_action_shortcut(ui->action_Load_from_Third_Slot, QStringLiteral("Load from 3rd Slot"));
+    link_action_shortcut(ui->action_Load_from_Fourth_Slot, QStringLiteral("Load from 4th Slot"));
+    link_action_shortcut(ui->action_Load_from_Fifth_Slot, QStringLiteral("Load from 5th Slot"));
+    link_action_shortcut(ui->action_Load_from_Sixth_Slot, QStringLiteral("Load from 6th Slot"));
+    link_action_shortcut(ui->action_Load_from_Seventh_Slot, QStringLiteral("Load from 7th Slot"));
+    link_action_shortcut(ui->action_Load_from_Eighth_Slot, QStringLiteral("Load from 8th Slot"));
+    link_action_shortcut(ui->action_Load_from_Ninth_Slot, QStringLiteral("Load from 9th Slot"));
+    link_action_shortcut(ui->action_Load_from_Tenth_Slot, QStringLiteral("Load from 10th Slot"));
     link_action_shortcut(ui->action_Load_from_Newest_Slot, QStringLiteral("Load from Newest Slot"));
+    link_action_shortcut(ui->action_Save_to_First_Slot, QStringLiteral("Save to 1st Slot"));
+    link_action_shortcut(ui->action_Save_to_Second_Slot, QStringLiteral("Save to 2nd Slot"));
+    link_action_shortcut(ui->action_Save_to_Third_Slot, QStringLiteral("Save to 3rd Slot"));
+    link_action_shortcut(ui->action_Save_to_Fourth_Slot, QStringLiteral("Save to 4th Slot"));
+    link_action_shortcut(ui->action_Save_to_Fifth_Slot, QStringLiteral("Save to 5th Slot"));
+    link_action_shortcut(ui->action_Save_to_Sixth_Slot, QStringLiteral("Save to 6th Slot"));
+    link_action_shortcut(ui->action_Save_to_Seventh_Slot, QStringLiteral("Save to 7th Slot"));
+    link_action_shortcut(ui->action_Save_to_Eighth_Slot, QStringLiteral("Save to 8th Slot"));
+    link_action_shortcut(ui->action_Save_to_Ninth_Slot, QStringLiteral("Save to 9th Slot"));
+    link_action_shortcut(ui->action_Save_to_Tenth_Slot, QStringLiteral("Save to 10th Slot"));
     link_action_shortcut(ui->action_Save_to_Oldest_Slot, QStringLiteral("Save to Oldest Slot"));
 
     const auto add_secondary_window_hotkey = [this](QKeySequence hotkey, const char* slot) {
